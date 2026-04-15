@@ -9,18 +9,19 @@ public class App {
         List<Estudiante> estudiantes = Generador.generarEstudiantes(cantidadEstudiantes);
 
         // es como decir [] est1, est2, est3....
-        //for (Estudiante est : estudiantes) {
-        //    System.out.println(est.nombre); 
-        //buscar si existe un estudiante con la cedula "1_999_993"
+        // for (Estudiante est : estudiantes) {
+        //    System.out.println(est.nombre);
+        // }
+        //buscar si existe un estudiante con la cedula "51_999_993"
         //1 forma de buscar un estudiante "lineal"} 
         
-            String cedulaBuscar = "51_999_993";
-            for(Estudiante est : estudiantes){
-                if(est.cedula.equals(cedulaBuscar)){
-                    System.out.println("EXISTE");
-                    break;  
-                } 
+        String cedulaBuscar = "51_999_993";
+        for(Estudiante est : estudiantes){
+            if(est.cedula.equals(cedulaBuscar)){
+                System.out.println("EXISTE");
+                break;  
             } 
+        } 
             // int inicio = 0;
             // int fin = estudiantes.size() - 1;
 
